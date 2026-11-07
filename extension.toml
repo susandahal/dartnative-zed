@@ -1,0 +1,18 @@
+id = "dartnative"
+name = "DartNative"
+description = "DartNative IntelliSense: widget and icon completion with support status, hover docs, Wrap with / Extract refactors, and stl/stf snippets."
+version = "0.1.0"
+schema_version = 1
+authors = ["Susan Dahal <susandahal53@gmail.com>"]
+repository = "https://github.com/susandahal/dartnative-zed"
+
+snippets = ["./snippets/dart.json"]
+
+# Runs alongside the Dart analyzer from the Dart extension (zed-extensions/dart),
+# which provides the "Dart" language, grammar and core IntelliSense.
+[language_servers.dartnative]
+name = "DartNative"
+languages = ["Dart"]
+
+[language_servers.dartnative.language_ids]
+"Dart" = "dart"
